@@ -1,15 +1,15 @@
 const inputText = document.querySelector("#text");
 const timeEl = document.querySelector(".time");
 let count = 60;
-let text = ''
+let text = "";
 inputText.addEventListener("input", () => {
   const interval = setInterval(() => {
     timeEl.textContent = count;
+    console.log(count);
     count--;
     if (count < 0) {
       clearInterval(interval);
-      inputText
+      inputText;
     }
   }, 1000);
-  
 });
